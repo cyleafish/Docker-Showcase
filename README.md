@@ -6,12 +6,13 @@
 - 撰寫操作說明文件，並教導團隊成員使用 Docker 工具
 
 ## Docker 操作筆記
-- 執行(在目標專案資料夾中開啟 CMD)：docker-compose up --build
+- 執行(在目標專案資料夾中開啟 CMD)：`docker-compose up --build`
 - 若修改了 Dockerfile，要先移除舊 volume 再重建
   - `docker-compose down -v`
   - `docker-compose up --build`
 
 ## 檔案結構(部分檔案)
+```
 Docker-Showcase/
 ├── server.js  #專題後端(部分程式)
 ├── db.js      #專題資料庫(部分程式)
@@ -20,3 +21,4 @@ Docker-Showcase/
 ├── package-lock.json     
 ├── package.json          
 └── .dockerignore
+```
